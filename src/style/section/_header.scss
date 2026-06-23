@@ -1,0 +1,100 @@
+.header {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    background: hsl(0 0% 100% / .8);
+    box-shadow: 0 2px 20px hsl(270 70% 30% / .15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.header_logo-div {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    gap: 10px;
+}
+
+.header_icon-span {
+    background: linear-gradient(135deg, hsl(270 70% 50%), hsl(280 80% 60%));
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+}
+
+.header_logo-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #ffffff;
+}
+
+.header_logo-title {
+    color: #190d26;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.header_logo-span {
+    color: #7f26d9;
+}
+
+.header_nav {
+    display: flex;
+    gap: 4px;
+}
+
+.header_nav-item {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+    border-radius: 12px;
+}
+
+.header_nav-item:hover {
+    background: #ebd6f5;
+}
+
+.header_nav-item:hover .header_nav-icon {
+    stroke: #4c1782;
+}
+.header_nav-item:hover .header_nav-subtitle {
+    color: #4c1782;
+}
+
+.header_nav-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+}
+
+.header_nav-icon {
+    width: 16px;
+    height: 16px;
+    stroke: #190d26;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
+
+.header_nav-subtitle {
+    color: #190d26;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
