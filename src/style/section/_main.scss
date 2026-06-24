@@ -1,7 +1,7 @@
 .main {
     background: #ffffff;
     background-image: radial-gradient(circle at center 40%, rgba(168, 85, 247, 0.13) 0%, rgba(255, 255, 255, 0) 60%);
-    padding-top: 80px;
+    padding: 80px 0;
     justify-content: center;
     display: flex;
 }
@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
-    margin: 0 auto;
+    margin: 0 auto 24px auto;
 }
 
 .main_blanck-icon {
@@ -67,22 +67,100 @@ body {
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
+    margin-top: 20px;
 }
 
-.main_btns-div {}
+.main_btns-div {
+    display: flex;
+    margin-top: 32px;
+    gap: 12px;
+    justify-content: center;
+}
 
-.main_btn {}
+.main_btn {
+    border-radius: 12px;
+    padding: 0 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 44px;
+    background: #ffffff;
+    color: #190d26;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+    border-color: #e0dae7;
+}
 
-.main_btn-icon {}
+.main_btn-gragient {
+    background: linear-gradient(135deg, #7f26d9, #b447eb);
+    color: #ffffff;
+    box-shadow: 0 4px 16px #7f26d959;
+}
 
-.main_list {}
+.main_btn-hover:hover {
+    background: #ebd6f5;
+    color: #4c1782;
+}
 
-.main_list-item {}
+.main_btn-icon {
+    width: 16px;
+    height: 16px;
+    stroke: #ffffff;
+    margin-left: 8px;
+}
 
-.main_list-span {}
+.main_list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 64px;
+}
 
-.main_list-icon {}
+.main_list-item {
+    box-shadow: 0 4px 24px -4px hsl(270 70% 50% / .12), 0 1px 4px hsl(270 70% 50% / .08);
+    background-color: hsl(0 0% 100% / .8);
+    border-color: hsl(270 20% 88% / .6);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 153px;
+    gap: 8px;
+}
 
-.main_list-titel {}
+.main_list-span {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #a73cdd, #e06ce0);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
 
-.main_list-subtitle {}
+.main_list-icon {
+    width: 18px;
+    height: 18px;
+    stroke: #ffffff;
+}
+
+.main_list-titel {
+    text-align: center;
+    color: #190d26;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.main_list-subtitle {
+    text-align: center;
+    color: #8c7b9d;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
