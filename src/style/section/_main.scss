@@ -1,6 +1,9 @@
 .main {
     background: #ffffff;
     background-image: radial-gradient(circle at center 40%, rgba(168, 85, 247, 0.13) 0%, rgba(255, 255, 255, 0) 60%);
+    padding-top: 80px;
+    justify-content: center;
+    display: flex;
 }
 
 body {
@@ -9,6 +12,7 @@ body {
 }
 
 .main .container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -23,6 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000;
+    margin: 0 auto;
 }
 
 .main_blanck-icon {
@@ -38,9 +43,31 @@ body {
     color: #ffffff;
 }
 
-.main_title {}
+.main_title {
+    text-align: center;
+    font-size: 60px;
+    line-height: 1;
+    color: #190d26;
+    font-weight: 800;
+}
 
-.main_subtitle {}
+.main_title-span {
+    background: linear-gradient(135deg, hsl(270 70% 35%), hsl(280 80% 55%), hsl(300 70% 65%));
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.main_subtitle {
+    text-align: center;
+    color: #8c7b9d;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
 
 .main_btns-div {}
 
