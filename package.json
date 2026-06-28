@@ -4,10 +4,10 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel src/index.html src/test.html --no-cache",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "parcel build --public-url /test11/"
+    "build": "parcel build src/index.html src/test.html --public-url /test11/ --no-cache"
   },
   "repository": {
     "type": "git",
